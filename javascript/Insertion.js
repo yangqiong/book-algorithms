@@ -4,8 +4,8 @@
 class Insertion {
     static sort( a = []) {
         const N = a.length;
-        for (let i = 0; i < N; i++){
-            for (let j = i; j > 0; j--){
+        for (let i = 1; i < N; i++){
+            for (let j = i; j >= i; j--){
                 if (a[j] < a[j-1]){
                     this.exch(a, j, j-1);
                 }
