@@ -1,3 +1,6 @@
+/**
+ * 顺序查找（基于有序数组）
+ */
 public class BinarySearchST<Key extends Comparable<Key>, Value>{
     private Key[] keys;
     private Value[] vals;

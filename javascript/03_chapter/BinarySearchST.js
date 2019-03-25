@@ -1,3 +1,6 @@
+/**
+ * 顺序查找（基于有序数组）
+ */
 class BinarySearchST {
     constructor(){
         this.keys = [];
