@@ -18,3 +18,9 @@ graph.addEdge('B', 'F');
 graph.addEdge('E', 'I');
 
 console.log(graph.toString());
+
+function printNode(value){
+    console.log('Visited vertex: ' + value);
+}
+
+graph.bfs(myVertices[0], printNode);

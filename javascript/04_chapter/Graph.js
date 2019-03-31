@@ -12,6 +12,25 @@ class Dictory {
     }
 }
 
+class Queue {
+    constructor(){
+        this.data = [];
+    }
+
+    isEmpty(){
+        return this.data.length === 0;
+    }
+
+    enqueue(v){
+        this.data.push(v);
+    }
+
+    dequeue(){
+        return this.data.shift();
+    }
+    
+}
+
 function Graph(){
     let vertices = [];              // 顶点
     let adjList = new Dictory();    // 邻接表
@@ -39,6 +58,37 @@ function Graph(){
             s += '\n';
         }
         return s;
+    }
+
+    let initializeColor = function(){
+        let color = [];
+        for (let i = 0; i < vertices.length; i++){
+            color[vertices[i]] = 'white';
+        }
+        return color;
+    }
+
+    this.bfs = function(v, callback){
+        let color = initializeColor();
+        let queue = new Queue();
+        queue.enqueue(v);
+
+        while(!queue.isEmpty()){
+            let u = queue.dequeue();
+            let neighbors = adjList.get(u);
+            color[u] = 'gray';
+            for (let i = 0; i < neighbors.length; i++){
+                let w = neighbors[i];
+                if (color[w] === 'white'){
+                    color[w] = 'gray';
+                    queue.enqueue(w);
+                }
+            }
+            color[u] = 'black';
+            if (callback){
+                callback(u);
+            }
+        }
     }
 }
 
