@@ -23,4 +23,5 @@ function printNode(value){
     console.log('Visited vertex: ' + value);
 }
 
-graph.bfs(myVertices[0], printNode);
+graph.bfs1(myVertices[0], printNode); // 广度优先
+graph.bfs2(printNode);                // 深度优先

@@ -68,7 +68,10 @@ function Graph(){
         return color;
     }
 
-    this.bfs = function(v, callback){
+    /**
+     * 广度优先算法
+     */
+    this.bfs1 = function(v, callback){
         let color = initializeColor();
         let queue = new Queue();
         queue.enqueue(v);
@@ -89,6 +92,33 @@ function Graph(){
                 callback(u);
             }
         }
+    }
+
+    /**
+     * 深度优先算法
+     */
+    this.bfs2 = function(callback){
+        let color = initializeColor();
+        for (let i = 0; i < vertices.length; i++){
+            if (color[vertices[i]] === 'white'){
+                dfsVisit(vertices[i], color, callback)
+            }
+        }
+    }
+
+    var dfsVisit = function(u, color, callback){
+        color[u] = 'grey';
+        if (callback){
+            callback(u);
+        }
+        let neighbors = adjList.get(u);
+        for (let i = 0; i < neighbors.length; i++){
+            let w = neighbors[i];
+            if (color[w] === 'white'){
+                dfsVisit(w, color, callback)
+            }
+        }
+        color[u] = 'black'
     }
 }
 
