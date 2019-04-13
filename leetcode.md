@@ -7,3 +7,4 @@
 14.     | Longest Common Prefix             | easy  | 字段树
 20.     | Valid Parentheses                 | easy  | 栈
 21.     | Merge Two Sorted Lists            | easy  | 循环
+26.     | Remove Duplicates from Sorted Array | easy | 字典
