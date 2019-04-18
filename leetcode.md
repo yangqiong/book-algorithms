@@ -11,3 +11,4 @@
 35.     | Search Insert Position            |   | easy  | 循环
 53.     | Maximum Subarray                  | √ | easy  | 动态规划法
 67.     | Add Binary                        |   | easy  | 循环
+70.     | Climbing Stairs                   |   | easy  | 动态规划法
