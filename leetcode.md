@@ -1,4 +1,4 @@
-序号 | 标题 | 有点意思 | 难度 |分类
+序号 | 标题 | 经典 | 难度 |分类
 ---- | ---- | ---- | --- | ----
 1.      | Two Sum                           |   | easy  | 字典
 7.      | Reverse Integer                   |   | easy  | 数字反转
@@ -11,4 +11,5 @@
 35.     | Search Insert Position            |   | easy  | 循环
 53.     | Maximum Subarray                  | √ | easy  | 动态规划法
 67.     | Add Binary                        |   | easy  | 循环
-70.     | Climbing Stairs                   |   | easy  | 动态规划法
+70.     | Climbing Stairs                   | √ | easy  | 动态规划法
+83.     | Remove Duplicates from Sorted List |  | easy  | 链表
