@@ -15,3 +15,4 @@
 83.     | Remove Duplicates from Sorted List |  | easy  | 链表
 100.    | Same Tree                         |   | easy  | 树
 101.    | Symmetric Tree                    | √ | easy  | 树
+104.    | Maximum Depth of Binary Tree      | √ | easy  | 树
