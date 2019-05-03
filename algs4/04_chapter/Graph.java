@@ -2,8 +2,21 @@
  * 4.1.2.2 Graph数据类型（邻接表）
  * 编译：javac -cp :../stdlib.jar:../.:../01_chapter/ Graph.java
  * 运行：java -cp :../stdlib.jar:../.:../01_chapter/ Graph.java tinyG.txt
- * 输入：A- B+ B+ B-
- * 输出：GPA = 3.25
+ * 结果：
+ * 13 vertices, 13 edges 
+ * 0: 6 2 1 5 
+ * 1: 0 
+ * 2: 0 
+ * 3: 5 4 
+ * 4: 5 6 3 
+ * 5: 3 4 0 
+ * 6: 0 4 
+ * 7: 8 
+ * 8: 7 
+ * 9: 11 10 12 
+ * 10: 9 
+ * 11: 9 12 
+ * 12: 11 9 
  */
 
 import java.util.Iterator;
