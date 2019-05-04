@@ -1,5 +1,5 @@
 /** 
- * 4.1.3.1 深度优先
+ * 4.1.3 深度优先搜索通道
  * 编译：javac -cp :../stdlib.jar:../.:../01_chapter/ DepthFirstSearch.java
  * 运行：java -cp :../stdlib.jar:../.:../01_chapter/ DepthFirstSearch.java tinyG.txt 0
  */
