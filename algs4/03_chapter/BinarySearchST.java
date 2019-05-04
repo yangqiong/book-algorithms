@@ -1,5 +1,3 @@
-import java.util.NoSuchElementException;
-
 /**
  * 3.1.5 二分查找（基于有序数组）
  * 编译： javac -Xlint:unchecked -cp :../stdlib.jar:../01_chapter BinarySearchST.java
@@ -16,6 +14,8 @@ import java.util.NoSuchElementException;
  * E 12
  * S 0
  */
+
+import java.util.NoSuchElementException;
 
 public class BinarySearchST<Key extends Comparable<Key>, Value> {
     private Key[] keys;
