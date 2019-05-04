@@ -51,6 +51,10 @@ public class BST<Key extends Comparable<Key>, Value> {
         else return x.val;
     }
 
+    public boolean contains(Key key){
+        return get(key) != null;
+    }
+
     public void put(Key key, Value val){
         root = put(root, key, val);
     }
@@ -97,6 +101,36 @@ public class BST<Key extends Comparable<Key>, Value> {
         Node t = floor(x.right, key);
         if ( t != null ) return t;
         else return x;
+    }
+
+    public Key floor2(Key key){
+        return floor2(root, key, null);
+    }
+
+    private Key floor2(Node x, Key key, Key best){
+        if (x == null) return best;
+        int cmp = key.compareTo(x.key);
+        if (cmp < 0) return floor2(x.left, key, best);
+        else if (cmp > 0) return floor2(x.right, key, x.key);
+        else return x.key;
+    }
+
+    public Key ceiling(Key key){
+        Node x = ceiling(root, key);
+        if (x == null) return null;
+        else return x.key;
+    }
+
+    private Node ceiling(Node x, Key key){
+        if (x == null) return null;
+        int cmp = key.compareTo(x.key);
+        if (cmp == 0) return x;
+        if (cmp < 0) {
+            Node t = ceiling(x.left, key);
+            if (t != null) return t;
+            else return x;
+        }
+        return ceiling(x.right, key);
     }
 
     public Key select(int k){
