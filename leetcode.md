@@ -14,6 +14,7 @@
 70     | Climbing Stairs                   | √ | easy   | 动态规划法
 83     | Remove Duplicates from Sorted List |  | easy   | 链表
 94     | Binary Tree Inorder Traversal     |   | medium | 中序遍历
+98     | Validate Binary Search Tree       |   | medium | 中序遍历
 100    | Same Tree                         |   | easy   | 树
 101    | Symmetric Tree                    | √ | easy   | 树
 104    | Maximum Depth of Binary Tree      | √ | easy   | 树
